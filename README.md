@@ -39,6 +39,35 @@ Activate with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate`
 python -m pip install -e ".[dev]"
 ```
 
+## Third-party software and acknowledgments
+
+This implementation builds on the following open-source software. We thank their authors and contributors.
+
+| Software | Version | Use in this repository |
+| --- | --- | --- |
+| [pymoo](https://pymoo.org/) | 0.6.1.3 | Mixed-variable optimization interfaces, crossover, constraint handling, and rank-and-crowding survival |
+| [NumPy](https://numpy.org/) | 1.26.4 | Numerical arrays and sampling |
+| [SciPy](https://scipy.org/) | 1.13.1 | Simpson integration and the exponential integral used for drawdown |
+| [Matplotlib](https://matplotlib.org/) | 3.9.4 | Result visualization |
+
+pymoo is distributed under the [Apache License 2.0](https://github.com/anyoptimization/pymoo/blob/0.6.1.3/LICENSE). Dependencies retain their upstream licenses.
+
+The included example implements its one-dimensional transport solver in `problem.py`. It does not import [FloPy](https://flopy.readthedocs.io/en/stable/) or AdePy, and does not launch a MODFLOW executable. FloPy-based modeling scripts are not included in this repository.
+
+When using the optimization framework, please also cite the pymoo paper:
+
+```bibtex
+@article{blank2020pymoo,
+  author  = {Blank, Julian and Deb, Kalyanmoy},
+  title   = {pymoo: Multi-Objective Optimization in Python},
+  journal = {IEEE Access},
+  volume  = {8},
+  pages   = {89497--89509},
+  year    = {2020},
+  doi     = {10.1109/ACCESS.2020.2990567}
+}
+```
+
 ## Run
 
 From the project root:
