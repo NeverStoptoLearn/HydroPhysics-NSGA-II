@@ -1,0 +1,30 @@
+{
+  "scenario": {
+    "length": 1000.0,
+    "duration": 10.0,
+    "nx": 100,
+    "nt": 100,
+    "dispersion": 10.0,
+    "velocity": 1.0,
+    "area": 100.0,
+    "porosity": 0.3,
+    "source_position": 500.0,
+    "peak_concentration": 100.0,
+    "plume_width": 10.0,
+    "pump_start_time": 1.0,
+    "max_rate": 50.0,
+    "construction_cost": 5000.0,
+    "pumping_cost": 10.0,
+    "initial_head": 50.0,
+    "min_head": 45.0,
+    "max_head": 52.0,
+    "transmissivity": 100.0,
+    "storativity": 0.0001,
+    "observation_radius": 10.0,
+    "min_spacing": 10.0
+  },
+  "optimizer": {
+    "population": 50,
+    "generations": 200
+  }
+}
