@@ -52,7 +52,7 @@ This implementation builds on the following open-source software. We thank their
 
 pymoo is distributed under the [Apache License 2.0](https://github.com/anyoptimization/pymoo/blob/0.6.1.3/LICENSE). Dependencies retain their upstream licenses.
 
-The included example implements its one-dimensional transport solver in `problem.py`. It does not import [FloPy](https://flopy.readthedocs.io/en/stable/) or AdePy, and does not launch a MODFLOW executable. FloPy-based modeling scripts are not included in this repository.
+The one-dimensional transport solver is implemented in `problem.py`.
 
 When using the optimization framework, please also cite the pymoo paper:
 
