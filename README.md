@@ -70,7 +70,19 @@ python -m pytest -q
 
 ## Citation
 
-Please cite the linked paper when using this code. Machine-readable citation metadata is provided in `CITATION.cff`.
+If you use this code in your research, please cite:
+
+```bibtex
+@article{zhou2025hydrophysics,
+  title   = {{HydroPhysics-NSGA-II}: A physics-informed multi-objective evolutionary algorithm for groundwater contaminant emergency scheduling},
+  author  = {Zhou, Zhengchen and Yan, Xuesong and Li, Dongcheng},
+  journal = {Swarm and Evolutionary Computation},
+  volume  = {99},
+  pages   = {102210},
+  year    = {2025},
+  doi     = {10.1016/j.swevo.2025.102210}
+}
+```
 
 ## Contact
 
